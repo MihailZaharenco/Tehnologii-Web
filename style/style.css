@@ -1,0 +1,141 @@
+header {
+    text-align: center; 
+    font-style: italic; 
+    margin-top: 20px; 
+}
+
+h1 {
+    font-size: 28px; 
+    color: black; 
+}
+
+/* Stil doar pentru meniul din index.html */
+.menu-circular ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 600px; 
+    height: 600px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.menu-circular ul li {
+    position: absolute;
+    width: 240px; 
+    height: 240px;
+}
+
+.menu-circular ul li:nth-child(1) { transform: rotate(0deg) translate(260px) rotate(0deg); }
+.menu-circular ul li:nth-child(2) { transform: rotate(60deg) translate(260px) rotate(-60deg); }
+.menu-circular ul li:nth-child(3) { transform: rotate(120deg) translate(260px) rotate(-120deg); }
+.menu-circular ul li:nth-child(4) { transform: rotate(180deg) translate(260px) rotate(-180deg); }
+.menu-circular ul li:nth-child(5) { transform: rotate(240deg) translate(260px) rotate(-240deg); }
+.menu-circular ul li:nth-child(6) { transform: rotate(300deg) translate(260px) rotate(-300deg); } 
+
+.menu-circular ul li a img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; 
+}
+.menu-circular ul li a img:hover,
+.menu-orizontal ul li a img:hover {
+    transform: scale(1.1); /* Mărește butonul la hover */
+}
+
+/* Stil doar pentru meniul de pe paginile secundare */
+.menu-orizontal ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+.menu-orizontal ul li {
+    margin: 0 15px; 
+}
+
+.menu-orizontal ul li a img {
+    width: 150px; 
+    height: auto;
+    border-radius: 10px; 
+    transition: transform 0.3s;
+}
+
+.menu-orizontal ul li a img:hover {
+    transform: scale(1.1); 
+}
+
+
+
+
+/* Aplica stiluri DOAR în DespreVolei.html */
+.pagina-despre #despre {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.pagina-despre #despre img {
+    width: 300px;  
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pagina-despre #despre p {
+    max-width: 600px;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+.pagina-despre .menu-orizontal {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagina-despre .menu-orizontal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pagina-despre .menu-orizontal li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.pagina-despre .menu-orizontal img {
+    width: 80px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.pagina-despre .menu-orizontal img:hover {
+    transform: scale(1.2);
+}
+
+
+.pagina-despre #imagine-despre {
+    width: 400px;  
+    height: auto;
+    float: right;  
+    margin: 20px 0 20px 20px;  
+    border-radius: 15px;  
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);  
+}
+
+
+
+body {
+    background-color: grey;
+}
+
+
+
